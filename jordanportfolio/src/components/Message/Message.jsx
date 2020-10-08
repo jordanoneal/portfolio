@@ -36,7 +36,7 @@ export default function Message() {
       <div className="titleMessage">
         <div className="heading">
           <div className="main text-center mb-3">
-            Hi, I am
+            Hello, I am
             <br />
             <span>
               <strong>Jordan O'Neal</strong>
