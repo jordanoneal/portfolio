@@ -7,6 +7,7 @@ import Message from "./components/Message/Message";
 import About from "./pages/About/About";
 import Fade from "react-reveal/Fade";
 import Skills from "./pages/Skills/Skills";
+import Projects from "./pages/Projects/Projects";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         </Fade>
       </div>
       <Skills />
+      <Projects />
     </div>
   );
 }
