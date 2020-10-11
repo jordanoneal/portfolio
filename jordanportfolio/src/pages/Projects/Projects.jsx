@@ -1,12 +1,18 @@
 import React from "react";
 import "./Projects.css";
-import { Accordion, Button, Card, Col, Row, Image } from "react-bootstrap";
-
+import {
+  Accordion,
+  Button,
+  Card,
+  Col,
+  Row,
+  Image,
+  Container,
+} from "react-bootstrap";
 // projects
 import RehomeUtah from "../../assets/img/projects/Key.jpeg";
 import SwellDwell from "../../assets/img/projects/swell.jpeg";
 import wepost from "../../assets/img/projects/unity.jpeg";
-
 // skills
 import L_HTML5 from "../../assets/img/skills/html-5.svg";
 import L_CSS3 from "../../assets/img/skills/css3.svg";
@@ -26,15 +32,15 @@ import googlemaps from "../../assets/img/skills/google-maps-2020-icon.svg";
 export default function Projects() {
   return (
     <div id="projects">
-      <div className="project-container">
-        <h1 className="pt-3 text-center font-details-b pb-3">PROJECTS</h1>{" "}
+      <h1 className="pt-3 text-center pb-3">PROJECTS</h1>{" "}
+      <Container>
         <Row>
-          {/* Cole Tanner Real Estate */}
-
-          <Col md={3}>
+          <Col md={4} className="justify-content-center">
             <Accordion>
               <Card style={{ width: "18rem" }}>
-                <Card.Title>Cole Tanner Real Estate</Card.Title>
+                <Card.Title className="text-center">
+                  Cole Tanner Real Estate
+                </Card.Title>
 
                 <Card.Img variant="top" src={RehomeUtah}></Card.Img>
                 <Accordion.Toggle
@@ -131,18 +137,28 @@ export default function Projects() {
                         </span>
                       </li>
                     </ul>
+                    <div>
+                      <Button
+                        variant="outline-primary"
+                        className="ml-2 project-button"
+                        href="https://re-home-utah.herokuapp.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        colored
+                      >
+                        View Project
+                      </Button>
+                    </div>
                   </Card.Body>
                 </Accordion.Collapse>
               </Card>
             </Accordion>
           </Col>
 
-          {/* SWELL DWELL */}
-
-          <Col md={3}>
+          <Col md={4} className="justify-content-center">
             <Accordion>
               <Card style={{ width: "18rem" }}>
-                <Card.Title>Swell Dwell</Card.Title>
+                <Card.Title className="text-center">Swell Dwell</Card.Title>
 
                 <Card.Img variant="top" src={SwellDwell}></Card.Img>
                 <Accordion.Toggle
@@ -228,18 +244,38 @@ export default function Projects() {
                         </span>
                       </li>
                     </ul>
+                    <div>
+                      <Button
+                        variant="outline-primary"
+                        className="ml-2 project-button"
+                        href="https://lancasting.github.io/Project-1/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        colored
+                      >
+                        View Project
+                      </Button>
+                      <Button
+                        variant="outline-primary"
+                        className="ml-2 project-button"
+                        href="https://github.com/Lancasting/Project-1"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        colored
+                      >
+                        Github
+                      </Button>
+                    </div>
                   </Card.Body>
                 </Accordion.Collapse>
               </Card>
             </Accordion>
           </Col>
 
-          {/* Wepost */}
-
-          <Col md={3}>
+          <Col md={4} className="justify-content-center">
             <Accordion>
               <Card style={{ width: "18rem" }}>
-                <Card.Title>wēpost</Card.Title>
+                <Card.Title className="text-center">wēpost</Card.Title>
 
                 <Card.Img variant="top" src={wepost}></Card.Img>
                 <Accordion.Toggle
@@ -358,13 +394,35 @@ export default function Projects() {
                         </span>
                       </li>
                     </ul>
+                    <div>
+                      <Button
+                        variant="outline-primary"
+                        className="ml-2 project-button"
+                        href="https://coronacrew.herokuapp.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        colored
+                      >
+                        View Project
+                      </Button>
+                      <Button
+                        variant="outline-primary"
+                        className="ml-2 project-button"
+                        href="https://github.com/Jay-0920/Project2"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        colored
+                      >
+                        Github
+                      </Button>
+                    </div>
                   </Card.Body>
                 </Accordion.Collapse>
               </Card>
             </Accordion>
           </Col>
         </Row>
-      </div>
+      </Container>
     </div>
   );
 }

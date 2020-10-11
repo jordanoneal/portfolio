@@ -1,16 +1,16 @@
 import React from "react";
-import { Card, CardDeck, Row, Col, Image } from "react-bootstrap";
+import { Card, Row, Col, Image, Container } from "react-bootstrap";
 import "./Skills.css";
 import skills from "./skills-data";
 
 export default function Skills() {
   return (
-    <div className="pt-3 pb-3" id="skills">
-      <h1 className="text-center font-details-b pb-4">TECH SKILLS</h1>
-      <CardDeck>
-        <Row className="d-flex justify-content-around">
-          {console.log(skills)};
-          <Col md={4}>
+    <div id="skills">
+      <h1 className="text-center font-details-b pb-4">SKILLS</h1>
+
+      <Container>
+        <Row>
+          <Col md={4} className="justify-content-center ">
             <Card className="focus mt-2 mb-2">
               <Card.Body>
                 <Card.Title className="text-center card-title">
@@ -40,8 +40,8 @@ export default function Skills() {
               </Card.Body>
             </Card>
           </Col>
-          {/* Backend */}
-          <Col md={4}>
+
+          <Col md={4} className="justify-content-center ">
             <Card className="focus mt-2 mb-2">
               <Card.Body>
                 <Card.Title className="text-center card-title">
@@ -70,8 +70,6 @@ export default function Skills() {
                 </Card.Text>
               </Card.Body>
             </Card>
-
-            {/* Hosting Platforms */}
             <Card className="focus mt-2 mb-2">
               <Card.Body>
                 <Card.Title className="text-center card-title">
@@ -101,11 +99,11 @@ export default function Skills() {
               </Card.Body>
             </Card>
           </Col>
-          {/* Programming Languages */}
-          <Col md={4}>
+
+          <Col md={4} className="justify-content-center ">
             <Card className="focus mt-2 mb-2">
               <Card.Body>
-                <Card.Title className="text-center  card-title">
+                <Card.Title className="text-center card-title">
                   Programming Languages
                 </Card.Title>
                 <hr />
@@ -131,8 +129,6 @@ export default function Skills() {
                 </Card.Text>
               </Card.Body>
             </Card>
-
-            {/* Version Control */}
 
             <Card className="focus mt-2 mb-2">
               <Card.Body>
@@ -160,9 +156,9 @@ export default function Skills() {
                 </Card.Text>
               </Card.Body>
             </Card>
-          </Col>{" "}
+          </Col>
         </Row>
-      </CardDeck>
+      </Container>
     </div>
   );
 }
