@@ -8,6 +8,7 @@ import About from "./pages/About/About";
 import Fade from "react-reveal/Fade";
 import Skills from "./pages/Skills/Skills";
 import Projects from "./pages/Projects/Projects";
+import Contact from "./pages/Contact/Contact";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       </div>
       <Skills />
       <Projects />
+      <Contact />
     </div>
   );
 }
