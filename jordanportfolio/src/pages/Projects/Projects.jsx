@@ -4,11 +4,9 @@ import "./Projects.css";
 import { Accordion, Button, Card, Col, Row } from "react-bootstrap";
 
 // projects
-import L_GetGitHubInfo from "../../assets/img/projects/get_github_info.webp";
-import L_SmartBrain from "../../assets/img/projects/brain.webp";
-import L_RoboFriends from "../../assets/img/projects/Robofriends.webp";
-import L_ProductHuntClone from "../../assets/img/projects/product_hunt_clone.webp";
-import L_PortfolioUsingDjango from "../../assets/img/projects/portfolioUsingDjango.webp";
+import RehomeUtah from "../../assets/img/projects/Key.jpeg"
+import SwellDwell from "../../assets/img/projects/swell.jpeg"
+import wepost from "../../assets/img/projects/wepost.jpeg"
 
 // skills
 import L_REACT from "../../assets/img/skills/react.svg";
@@ -34,7 +32,7 @@ export default function Projects() {
             <Card style={{ width: "18rem" }}>
               <Card.Title>Cole Tanner Real Estate</Card.Title>
 
-              <Card.Img variant="top" src={L_GetGitHubInfo}></Card.Img>
+              <Card.Img variant="top" src={RehomeUtah}></Card.Img>
               <Accordion.Toggle
                 as={Card.Header}
                 eventKey="0"
@@ -47,12 +45,6 @@ export default function Projects() {
                 <Card.Body>
                   <strong>Description:</strong> Website for simplifying home
                   selling by creating a customizable service and marketing plan.
-                  <hr />
-                  <strong>Features:</strong>
-                  <ul className="list-styles pt-1">
-                    <li>Search any Github profile</li>
-                    <li>Real-time API calls</li>
-                  </ul>
                   <hr />
                   <strong>Tech used:</strong>
                   <ul>
@@ -112,7 +104,7 @@ export default function Projects() {
             <Card style={{ width: "18rem" }}>
               <Card.Title>Swell Dwell</Card.Title>
 
-              <Card.Img variant="top" src={L_GetGitHubInfo}></Card.Img>
+              <Card.Img variant="top" src={SwellDwell}></Card.Img>
               <Accordion.Toggle
                 as={Card.Header}
                 eventKey="0"
@@ -126,12 +118,6 @@ export default function Projects() {
                   <strong>Description:</strong> Website that pulls marine
                   weather data for water sports to determine if conditions are
                   ideal.
-                  <hr />
-                  <strong>Features:</strong>
-                  <ul className="list-styles pt-1">
-                    <li>Search any Github profile</li>
-                    <li>Real-time API calls</li>
-                  </ul>
                   <hr />
                   <strong>Tech used:</strong>
                   <ul>
@@ -191,7 +177,7 @@ export default function Projects() {
             <Card style={{ width: "18rem" }}>
               <Card.Title>wēpost</Card.Title>
 
-              <Card.Img variant="top" src={L_GetGitHubInfo}></Card.Img>
+              <Card.Img variant="top" src={wepost}></Card.Img>
               <Accordion.Toggle
                 as={Card.Header}
                 eventKey="0"
@@ -205,12 +191,6 @@ export default function Projects() {
                   <strong>Description:</strong> App that records incidents of
                   police misconduct. We employ a truth system of user votes to
                   give posts a "Truth Score".
-                  <hr />
-                  <strong>Features:</strong>
-                  <ul className="list-styles pt-1">
-                    <li>Search any Github profile</li>
-                    <li>Real-time API calls</li>
-                  </ul>
                   <hr />
                   <strong>Tech used:</strong>
                   <ul>

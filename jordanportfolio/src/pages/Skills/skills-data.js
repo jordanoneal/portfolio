@@ -10,13 +10,12 @@ import L_POSTGRESQL from "../../assets/img/skills/postgresql.svg";
 import L_MSSQL from "../../assets/img/skills/mssql.svg";
 import L_GIT from "../../assets/img/skills/git-icon.svg";
 import L_HEROKU from "../../assets/img/skills/heroku.svg";
-import L_DIGITAL_OCEAN from "../../assets/img/skills/digital-ocean.svg";
 import L_GITHUB_PAGES from "../../assets/img/skills/github.svg";
-import L_PYTHONANYWHERE from "../../assets/img/skills/pythonanywhere.svg";
 import L_JAVASCRIPT from "../../assets/img/skills/javascript.svg";
 import L_TYPESCRIPT from "../../assets/img/skills/typescript.svg";
-import L_GOLANG from "../../assets/img/skills/go-6.svg";
-import L_PYTHON from "../../assets/img/skills/python.svg";
+import jquery from "../../assets/img/skills/jquery.svg";
+import mysql from "../../assets/img/skills/mysql.svg";
+import mongodb from "../../assets/img/skills/mongodb.svg";
 
 const skills = {
   frontend: [
@@ -35,6 +34,12 @@ const skills = {
       imgSrc: L_JAVASCRIPT,
       skillName: "JavaScript",
     },
+    {
+      imgAltText: "jQuery",
+      imgSrc: jquery,
+      skillName: "jQuery",
+    },
+
     {
       imgAltText: "Bootstrap",
       imgSrc: L_BOOTSTRAP,
@@ -69,6 +74,16 @@ const skills = {
       imgAltText: "Express",
       imgSrc: L_EXPRESS,
       skillName: "Express",
+    },
+    {
+      imgAltText: "MySQL",
+      imgSrc: mysql,
+      skillName: "MySQL",
+    },
+    {
+      imgAltText: "mongoDB",
+      imgSrc: mongodb,
+      skillName: "mongoDB",
     },
   ],
   hostingPlatforms: [
