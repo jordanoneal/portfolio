@@ -14,7 +14,8 @@
 }
 
 .profile {
-  max-width: 18em;
+  /* max-width: 18em; */
+  width: 18em;
 }
 
 .my-details {
